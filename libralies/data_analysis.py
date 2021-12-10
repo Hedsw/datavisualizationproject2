@@ -167,13 +167,9 @@ def find_opt_K(tfidf_matrix, numfiles):
         print(km.inertia_)
         Sum_of_squared_distances.append(km.inertia_)
     
-    plt.plot(K, Sum_of_squared_distances, 'bx-')
-    plt.xlabel('k')
-    plt.ylabel('Sum_of_squared_distances')
-    plt.title('Sum of sq error vs K')
-    plt.savefig('../data/artifacts/k-means_sq_err_plot.png')
+    
 
     return K[np.argmin(Sum_of_squared_distances)]
 
 # process the data
-process_data(run_optK=False, create_TFIDF=False, optK=19)
+# process_data(run_optK=False, create_TFIDF=False, optK=19)

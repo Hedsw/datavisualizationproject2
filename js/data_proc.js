@@ -1,5 +1,5 @@
 let dataFileFiles = 'data/processed_data/processed_filesv3.csv' // files data files
-let dataFileClusters = 'data/processed_data/processed_clustersv3.csv' // cluster data files
+let dataFileClusters = 'data/processed_data/processed_clustersv3.csv'
 let dataFiles = new Map(); // the files in json object array
 let dataClusters = new Map(); // the files in json object array
 let isDragged = false; // flag to discern between drag and click events
